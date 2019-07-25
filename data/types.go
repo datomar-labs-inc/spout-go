@@ -30,11 +30,12 @@ type ArticleQueryResponse struct {
 
 // ArticleResult represents a single article that matched the search parameters
 type ArticleResult struct {
-	ArticleID   string  `json:"article_id"`
-	Confidence  float64 `json:"confidence"`
-	Source      string  `json:"source"`
-	SourceURL   string  `json:"source_url"`
-	ArticleBody string  `json:"article_body"`
+	ArticleID    string  `json:"article_id"`
+	Confidence   float64 `json:"confidence"`
+	Source       string  `json:"source"`
+	SourceURL    string  `json:"source_url"`
+	ArticleBody  string  `json:"article_body"`
+	ArticleTitle string  `json:"article_title"`
 }
 
 // ArticleQueryRequest is what the user should send the api to query some articles
